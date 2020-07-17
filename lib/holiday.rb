@@ -59,16 +59,7 @@ end
 add_supply_to_memorial_day(holiday_supplies, "baloons")
 
 
-#def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
-#  holiday_hash[season][holiday_name] = supply_array
-#  holiday_hash
-#
-#end
 
-
-
-# the problem here is that I cannot create another season...the seasons are
-# locked in for some bizzare reason.
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   # code here
   # remember to return the updated hash
@@ -79,14 +70,6 @@ add_new_holiday_with_supplies(holiday_supplies, :fall, :succas, ["lulav", "esrog
 
 
 
-# this is the basis for the method below that adds a whole new season to the hash
-# puts holiday_supplies[:aviv] = {:pesach => ["Matzah", "Maror"]}
-# puts holiday_supplies
-
-
-# Here we create a whole new season at what we could call the the "season-echelon"
-# The new echelon being created apparently must always be left of the 
-# equals (=) sign as shown below on line 94
 def add_new_season_and_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   holiday_hash[season] = {holiday_name => supply_array} # the new echelon being created is to the left of the equals sign.
   holiday_hash
@@ -97,7 +80,7 @@ add_new_season_and_holiday_with_supplies(holiday_supplies, :aviv, :pesach, mitzv
 
 
 def all_winter_holiday_supplies(holiday_hash)
-  # return an array of all of the supplies that are used in the winter season
+  
   holiday_hash[:winter].values.flatten
 end
 
