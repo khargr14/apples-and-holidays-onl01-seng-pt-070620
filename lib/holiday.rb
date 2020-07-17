@@ -76,9 +76,6 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   holiday_hash
 end
 add_new_holiday_with_supplies(holiday_supplies, :fall, :succas, ["lulav", "esrog", "schach"])
-# This is the way learn.co tests the method to see if it's working:
-# columbus_day_supplies = ["Flags", "Parade Floats", "Italian Food"]
-# add_new_holiday_with_supplies(holiday_supplies, :fall, :columbus_day, columbus_day_supplies)
 
 
 
